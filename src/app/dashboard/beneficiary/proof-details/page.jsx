@@ -2,7 +2,7 @@
 import ProofDetails from "@/components/Dashboard/Beneficiary/ProofDetails";
 import React from "react";
 import { useSearchParams } from "next/navigation";
-const page = () => {
+const Page = () => {
   const searchParams = useSearchParams();
     const breakdownId = searchParams.get("breakdownId"); // Get the ID from URL
   
@@ -13,4 +13,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
