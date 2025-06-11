@@ -4,7 +4,7 @@ import BreakdownReport from "@/components/Dashboard/Beneficiary/BreakdownReport"
 import React from "react";
 
 import { useSearchParams } from "next/navigation";
-const page = () => {
+const Page = () => {
   const searchParams = useSearchParams();
   const applicationId = searchParams.get("applicationId"); // Get the ID from URL
   const campaignId = searchParams.get("campaignId"); 
@@ -18,4 +18,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

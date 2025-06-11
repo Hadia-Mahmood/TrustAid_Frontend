@@ -14,7 +14,6 @@ import {
   
   sidebarLinksOrganization,
   
-  sidebarLinksUser,
 } from "@/app/data";
 import ProfileDropdown from "./ProfileDropdown";
 import Cookies from "js-cookie";
@@ -51,9 +50,7 @@ export default function LayoutWrapperDashboard({ children }) {
     case "beneficiary":
         sidebarLinks = sidebarLinksBeneficiary;
         break;
-    case "user":
-      sidebarLinks = sidebarLinksUser;
-      break;
+    
     case "donor":
         sidebarLinks = sidebarLinksDonor;
         break;
